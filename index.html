@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- PAGINA INICIAL -->
+    <div id="start-screen">
+      <h1 id="name-game">DARK NIGHT OF THE SOUL</h1>
+
+      <img src="PONG-COVER.png" alt="start-image" id="game-cover" />
+      <button id="play-btn">PLAY</button>
+      <audio id="background-music" src="AUDIO.mp3" loop></audio>
+    </div>
+
+    <!---------- BOARD ------------>
+    <!--imagen dentro del board-->
+    <div class="diagram"></div>
+
+    <!--RELOJ-->
+    <h1>Reloj en Tiempo Real</h1>
+    <div id="clock">00:00</div>
+    <div class="buttons">
+      <button id="start">Iniciar</button>
+      <button id="reset">Reiniciar</button>
+    </div>
+
+    <!--linea punteada-->
+    <div class="dotted-line"></div>
+    <!-- aqui se añade un div con un id -->
+    <div id="gameContainer">
+      <!-- canvas lienzo -->
+      <canvas id="gameBoard" width="1000" height="600"></canvas>
+      <!-- div id -->
+      <div id="scoreText">0:0</div>
+
+      <!--botom -->
+      <button id="resetBtn">Reset</button>
+    </div>
+
+    <!-- script js -->
+    <script src="script.js"></script>
+  </body>
+</html>

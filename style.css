@@ -1,0 +1,142 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: black;
+  font-family: Arial, sans-serif;
+}
+
+/* START SCREEN */
+#start-screen {
+  max-width: 100%;
+  height: auto;
+  position: relative;
+  top: 10px;
+  right: 300px;
+}
+
+#name-game {
+  display: flex;
+  position: relative;
+  font-family: "arcade", monospace;
+  color: rgb(255, 255, 255);
+  font-size: 100px;
+  top: 50px;
+  left: 350px;
+}
+
+#game-cover {
+  position: relative;
+  left: 610px;
+  bottom: 25px;
+}
+
+#play-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #000000;
+  font-family: "arcade", monospace;
+  color: rgb(255, 255, 255);
+  padding: 15px 30px;
+  font-size: 50px;
+  border: none;
+  position: relative;
+  left: 780px;
+  bottom: 50px;
+  box-shadow: 0 4px 8px rgb(255, 255, 255);
+  animation: flicker 1s infinite; /* Aplica la animación */
+}
+
+#play-btn:hover {
+  background-color: hsl(0, 0%, 0%);
+}
+
+/*RELOJ*/
+
+#clock {
+  background-color: white;
+  font-size: 48px;
+  margin: 20px 0;
+}
+
+.buttons button {
+  padding: 10px 20px;
+  margin: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#start {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+#reset {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+/*se centra los elementos dentro del juego dentro del contenedor*/
+#gameContainer {
+  text-align: center;
+  display: none;
+
+  /*background-image: url(main-page.jpg);*/
+
+  background-repeat: repeat;
+  background-color: rgb(2, 53, 222);
+}
+/*...........*/
+
+/*tablero de juego*/
+#gameBoard {
+  border: 3px solid;
+  margin: 200px;
+  background-image: url("diagram-board.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/*esto es lo numeros de puntuaje*/
+#scoreText {
+  font-family: "arcade", monospace;
+  font-size: 200px;
+  position: relative;
+  bottom: 150px;
+  color: black;
+}
+
+/*boton de reset */
+#resetBtn {
+  font-family: "press-start";
+  font-size: 22px;
+  width: 100px;
+  height: 50px;
+  border: 4px solid;
+  border-radius: 15px;
+  cursor: pointer;
+  position: relative;
+  bottom: 180px;
+}
+
+/* crear animación */
+
+@keyframes flicker {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
